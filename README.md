@@ -26,4 +26,4 @@ python pack_data.py
 ```
 
 # Disclaimer
-This dataset is for educational and research purposes only. The videos found at the URLs are protected under Standard YouTube Licenses and the terms therein. The videos were uploaded to YouTube and created by the AFP news agency (https://www.youtube.com/user/AFP, https://www.afp.com/en). We claim no ownership of these videos or their contents. They belong to their original copyright owners.
+This dataset is for educational and research purposes only. The videos found at the URLs are protected under their respective YouTube licenses and the terms therein. The videos were uploaded to YouTube and created by the AFP news agency (https://www.youtube.com/user/AFP, https://www.afp.com/en). We claim no ownership of these videos or their contents. They belong to their original copyright owners.
