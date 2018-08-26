@@ -25,7 +25,7 @@ python pack_data.py
     title={Incorporating Background Knowledge into Video Description Generation},
     booktitle={Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
     year={2018},
-    month={October},
+    month={November},
     publisher={Association for Computational Linguistics},
     location={Brussels, Belgium}
 }
