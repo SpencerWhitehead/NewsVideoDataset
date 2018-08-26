@@ -15,7 +15,7 @@ DATA_FIELDS = ['id', 'upload_date', 'duration', 'fulltitle',
 YT_URL = 'https://www.youtube.com/watch?v=%s'
 
 
-def extract_metadata(meta_json, id_field=DATA_FIELDS[-3], tag_field=DATA_FIELDS[5], url_field='url'):
+def get_relevant_metadata(meta_json, id_field=DATA_FIELDS[-3], tag_field=DATA_FIELDS[5], url_field='url'):
     relevant_data = {}
     with open(meta_json, 'r') as f:
         all_data = json.load(f)
@@ -28,13 +28,13 @@ def extract_metadata(meta_json, id_field=DATA_FIELDS[-3], tag_field=DATA_FIELDS[
     return relevant_data
 
 
-def retrieve_metadata(metadata_dir, out_dir):
+def filter_metadata(metadata_dir, out_dir):
     full_out_dir = os.path.expanduser(out_dir)
     if not os.path.exists(full_out_dir):
         os.makedirs(full_out_dir)
 
     for vid_metafname in glob.glob(os.path.join(metadata_dir, '*.info.json')):
-        curr_meta = extract_metadata(vid_metafname)
+        curr_meta = get_relevant_metadata(vid_metafname)
         outfname = os.path.join(full_out_dir, os.path.basename(vid_metafname))
         with open(outfname, 'w') as outf:
             json.dump(curr_meta, outf)
