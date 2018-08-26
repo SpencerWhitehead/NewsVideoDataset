@@ -15,12 +15,15 @@ DATA_FIELDS = ['id', 'upload_date', 'duration', 'fulltitle',
 YT_URL = 'https://www.youtube.com/watch?v=%s'
 
 
-def extract_metadata(meta_json, id_field=DATA_FIELDS[-3], url_field='url'):
+def extract_metadata(meta_json, id_field=DATA_FIELDS[-3], tag_field=DATA_FIELDS[5], url_field='url'):
     relevant_data = {}
     with open(meta_json, 'r') as f:
         all_data = json.load(f)
         for field_name in DATA_FIELDS:
-            relevant_data[field_name] = all_data[field_name]
+            if field_name != tag_field:
+                relevant_data[field_name] = all_data[field_name]
+            else:
+                relevant_data[field_name] = [tag for tag in all_data[field_name] if tag.lower() != "web"]
     relevant_data[url_field] = YT_URL % relevant_data[id_field]
     return relevant_data
 
