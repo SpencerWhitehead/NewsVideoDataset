@@ -1,5 +1,5 @@
 # NewsVideoDataset
-This repository includes the resources and instructions for retrieving the news video dataset from Whitehead et al., 2018.
+This repository includes the resources and instructions for retrieving the news video dataset from [Whitehead et al., 2018](http://nlp.cs.rpi.edu/paper/videocaption.pdf).
 
 # Retrieving the videos
 First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, run the following command:
