@@ -46,4 +46,4 @@ if __name__ == '__main__':
     p.add_argument("output_dir", help="Directory to write filtered meta-data files.")
     args = p.parse_args()
 
-    retrieve_metadata(args.input_dir, args.output_dir)
+    filter_metadata(args.input_dir, args.output_dir)
