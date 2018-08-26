@@ -13,7 +13,7 @@ First, install the youtube_dl program from here: https://github.com/rg3/youtube-
 ```
 youtube-dl -o "OUTPUT_FILE_PATH/vid.%(id)s.%(ext)s" --batch-file urls.txt --restrict-filenames --write-info-json --recode-video mp4 --sleep-interval 20 --max-sleep-interval 50
 ```
-This will retrieve the videos and meta-data from YouTube. If you would like to refine the meta-data files and eliminate potentially irrelevant information like the video playback quality options, then run:
+This will retrieve the videos and meta-data from YouTube. If you would like to refine the meta-data files and eliminate potentially irrelevant information like the video playback quality options, then download and run:
 ```
 python pack_data.py
 ```
