@@ -1,6 +1,12 @@
 # NewsVideoDataset
 This repository includes the resources and instructions for retrieving the news video dataset from [Whitehead et al., 2018](http://nlp.cs.rpi.edu/paper/videocaption.pdf).
 
+# Dataset statistics
+| | Videos | Sentences | Duration (seconds) | Tags |
+| ------------- |  :-------------: | :-------------: | :-------------: | :-------------: |
+| Total | 2,883 | 3,302 | 151,474 | 13,431 |
+| Average (per video) |  | 1.2 | 52.5 | 4.7 |
+
 # Retrieving the videos
 First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, run the following command:
 
