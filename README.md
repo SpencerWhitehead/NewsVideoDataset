@@ -8,7 +8,7 @@ This repository includes the resources and instructions for retrieving the news 
 | Average (per video) |  | 52.5 | 4.7 | 1.2 | 3.3 |
 
 # Retrieving the videos
-First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, download `urls.txt` run the following command:
+First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, download `urls.txt` and run the following command:
 
 ```
 youtube-dl -o "OUTPUT_FILE_PATH/vid.%(id)s.%(ext)s" --batch-file urls.txt --restrict-filenames --write-info-json --recode-video mp4 --sleep-interval 20 --max-sleep-interval 50
