@@ -4,8 +4,8 @@ This repository includes the resources and instructions for retrieving the news 
 # Dataset statistics
 | | Videos | Duration (seconds) | Tags | Sentences | Unique words (vocab) |
 | ------------- |  :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| Total | 2,883 | 151,474 | 13,431 | 3,302 | 9,471 |
-| Average (per video) |  | 52.5 | 4.7 | 1.2 | 3.3 |
+| Total | 2,883 | 151,474 | 13,431 | 3,302 | 9,179 |
+| Average (per video) |  | 52.5 | 4.7 | 1.2 | 3.2 |
 
 # Retrieving the videos
 First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, download `urls.txt` and run the following command:
