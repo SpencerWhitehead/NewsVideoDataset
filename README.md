@@ -1,5 +1,5 @@
 # NewsVideoDataset
-This repository includes the resources and instructions for retrieving the news video dataset from [Whitehead et al., 2018](http://nlp.cs.rpi.edu/paper/videocaption.pdf).
+This repository includes the resources and instructions for retrieving the news video dataset from [Whitehead et al., 2018](http://nlp.cs.rpi.edu/paper/incorporating-background-knowledge-final.pdf).
 
 # Dataset statistics
 | | Videos | Duration (seconds) | Tags | Sentences | Unique words (vocab) |
