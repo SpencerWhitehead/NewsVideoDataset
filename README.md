@@ -11,16 +11,17 @@ This repository includes the resources and instructions for retrieving the news 
 First, install the youtube_dl program from here: https://github.com/rg3/youtube-dl. Next, download `urls.txt` and run the following command:
 
 ```
-youtube-dl -o "OUTPUT_FILE_PATH/vid.%(id)s.%(ext)s" --batch-file urls.txt --restrict-filenames --write-info-json --recode-video mp4 --sleep-interval 20 --max-sleep-interval 50
+youtube-dl -o "META_DATA_FILE_PATH/vid.%(id)s.%(ext)s" --batch-file urls.txt --restrict-filenames --write-info-json --recode-video mp4 --sleep-interval 20 --max-sleep-interval 50
 ```
 This will retrieve the videos and meta-data from YouTube. If you would like to refine the meta-data files and eliminate potentially irrelevant information like the video playback quality options, then download and run:
 ```
-python pack_data.py
+python pack_data.py META_DATA_FILE_PATH CLEAN_META_DATA_FILE_PATH
 ```
 
 # Citation
+If you use any of these resources, please use the following citation:
 ```
-@inproceedings{whiteheadKaVD2018,
+@inproceedings{whitehead2018KaVD,
     Author = {Whitehead, Spencer and Ji, Heng and Bansal, Mohit and Chang, Shih-Fu and Voss, Clare R.},
     title={Incorporating Background Knowledge into Video Description Generation},
     booktitle={Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
